@@ -16,7 +16,7 @@ function maxOfTwo(a, b){
   // ---------------------
   // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
   // ---------------------
-function maxOfThree(a, b, c){
+ function maxOfThree(a, b, c){
   if ( a >= b && a >= c) { return a;}
 
   else if (b >= a && b >= c) {return b;}
@@ -29,7 +29,29 @@ function maxOfThree(a, b, c){
   // ---------------------
   // Define a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
   // ---------------------
+  function isVowel(char){
+    if char=='a' or char == 'e' or char == 'i' or char == 'o' or char == 'u'
+  {return true;} 
+   else  {return false;} 
 
+
+  }
+
+  isVowel(amber oglesby)
+
+  var findVowel = function(letter) {
+
+    var vowels = ["a", "e", "i", "o", "u"];
+
+    for(var i = 0; i < vowels.length; i++){ 
+        if(letter === vowels[i]){
+            return true;
+         }
+    }
+
+    { return false;
+
+}
 
 
   // ---------------------
