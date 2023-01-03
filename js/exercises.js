@@ -5,12 +5,22 @@
   // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript.
   // ---------------------
 
+function maxOfTwo(a, b){
+ if (a > b) { return a; }
+ 
+ else { return b; }
+}
 
+ maxOfTwo(2, 4)
 
   // ---------------------
   // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
   // ---------------------
+function maxOfThree(a, b, c){
+  if ( a >= b && a >= c) { return a;}
 
+  else if (b >= a && b >= c) {return b;}
+  
 
 
   // ---------------------
