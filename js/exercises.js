@@ -9,7 +9,7 @@ function maxOfTwo(a, b){
  if (a > b) { return a; }
  
  else { return b; }
-}
+   }
 
  maxOfTwo(2, 4)
 
@@ -20,9 +20,12 @@ function maxOfThree(a, b, c){
   if ( a >= b && a >= c) { return a;}
 
   else if (b >= a && b >= c) {return b;}
+
+  else {return c;}
   
+   }
 
-
+   maxOfThree(3,5,7)
   // ---------------------
   // Define a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
   // ---------------------
