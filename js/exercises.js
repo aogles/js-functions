@@ -40,9 +40,9 @@ function maxOfTwo(a, b){
   isVowel(amber oglesby)
 
   
-//var YOURTEXTHERE = 'b';
+/* var YOURTEXTHERE = 'b';
 
-/* check if it's vowel
+/check if it's vowel
 if (/[a|e|i|o|u]/i.test(YOURTEXTHERE)) {
   console.log('vowel!');
 }
@@ -53,37 +53,94 @@ else
   // ---------------------
   // Write a function rovarspraket() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
   // ---------------------
+ 
+ /* def translate(str):
+    consonants='bcdfghjklmnpqrstvwxyz'
+    print("".join(l+'o'+l if l in consonants else l for l in str))
 
+string=input("Enter Any String: ")
 
+translate(string) */
 
   // ---------------------
   // Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
   // ---------------------
 
+  function sum(num1, num2):
+  total = num1 + num2 
+  return total
+
+  function Multiply(num1, num2):
+  total = num1 * num2
+  return total
+
+ print(sum(2, 3))
+
+ /* function sum(numbers) {
+	var total = 0;
+	for (var i = 0; i < numbers.length; i++) {
+		total += numbers[i];
+	}
+	return total;
+}
+
+console.log(sum([1,2,3,4]));
+
+
+function multiply(numbers) {
+	var total = 1;
+	for (var i = 0; i < numbers.length; i++) {
+		total = (total * numbers[i]);
+	}
+	return total;
+console.log(multiply([1,2,3,4]));
+*/
 
 
   // ---------------------
   // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
   // ---------------------
-
+  function reverseString(str) {
+    return str.split("").reverse().join("");
+}
+reverseString("jag testar");
 
 
   // ---------------------
   // Define a function findLongestWord() that takes an array of words and returns the length of the longest one.
   // ---------------------
+ function findLongestWord(str) {
+   return str.length;
 
-
+ }
+findLongestWord("This homework was lowkey highkey hard");
 
   // ---------------------
   // Define a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
   // ---------------------
-
-
+ function filterLongWords(str){
+  return str.length;
+ }
+filterLongWords("I hope this is working");
 
   // ---------------------
   // Define a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
   // ---------------------
+  function charFreq( string ) {
+    var array_lengths = {}; // object
 
+    // compute frequencies of each value
+    for(var i = 0; i < string.length; i++) {
+        value = string[i];
+        if(value in array_lengths) {
+            array_lengths[value]++;
+        } else {
+            array_lengths[value] = 1;
+        }
+    }
+    return array_lengths;
+}
+counter = charFreq("abbabcbdbabdbdbabababcbcbab");
 
   ////////////////////////////////////////////////////////////////////////
   /////////////////////////DO NOT CHANGE CODE BELOW///////////////////////
