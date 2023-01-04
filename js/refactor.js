@@ -265,8 +265,12 @@ var addNumbers = function(numberA, numberB) {
 var twoPlusTwo = addNumbers(2,2);
 
 // Put your answer below -------------------------
+console.log(num1 + num2);
+let num1 = 2
+let num2 = 2
 
 
+console.log(2 + 2);
 
 // -----------------------------------------------
 
@@ -292,8 +296,16 @@ var accelerate = function(amount) {
 };
 
 // Put your answer below -------------------------
+// I think the issues is the speed be set to 0, and that there is not way for the function to determine the amount or acceleration.
+function accelerate(arr) {
 
-
+  for(let i = 1; i < arr.speed; i++) {
+      if(arr[i].speed > speed) {
+          speed = arr[i].speed
+      }
+  }
+return speed;
+}
 
 // -----------------------------------------------
 
