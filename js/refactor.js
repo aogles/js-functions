@@ -111,7 +111,9 @@ var reverseStr = function(str) {
 };
 
 // Put your answer below -------------------------
-
+function reverseString(str) {
+  return str.split("").reverse().join("");
+  }  
 
 
 // -----------------------------------------------
@@ -146,7 +148,17 @@ var spanishColor = function(colorName) {
 };
 
 // Put your answer below -------------------------
+function spanishColor(colorName) {
+const colorNames = {
+  "blanco": "#ffffff",
+  "rojo": "#ff000",
+  "azul": "#0000ff",
+ "verde": "#00ff00",
+ "negro": "#000000",
+}
+};
 
+return colorNames[colorName.toLowerCase()] ?
 
 
 // -----------------------------------------------
@@ -164,7 +176,8 @@ var spanishColor = function(colorName) {
 var foo = "bar";
 
 // Put your answer below -------------------------
-
+var foo;
+foo= "bar";
 
 // -----------------------------------------------
 
