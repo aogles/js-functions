@@ -39,19 +39,15 @@ function maxOfTwo(a, b){
 
   isVowel(amber oglesby)
 
-  var findVowel = function(letter) {
+  
+//var YOURTEXTHERE = 'b';
 
-    var vowels = ["a", "e", "i", "o", "u"];
-
-    for(var i = 0; i < vowels.length; i++){ 
-        if(letter === vowels[i]){
-            return true;
-         }
-    }
-
-    { return false;
-
+/* check if it's vowel
+if (/[a|e|i|o|u]/i.test(YOURTEXTHERE)) {
+  console.log('vowel!');
 }
+else
+  console.log('not vowel'); */
 
 
   // ---------------------
