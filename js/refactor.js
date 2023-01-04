@@ -173,7 +173,7 @@ return colorNames[colorName.toLowerCase()] ?
 // Break it up so that the declaration and
 // assignment are happening on 2 seperate lines.
 
-var foo = "bar";
+ var foo = "bar";
 
 // Put your answer below -------------------------
 var foo;
@@ -201,6 +201,10 @@ var callTenTimes = function(callback) {
 // callTenTime(functionName);
 
 // Put your answer below -------------------------
+function callTenTime(callback) {
+  var range = Array.from(Array(10).keys());
+  range.forEach(callback);
+};
 
 
 // -----------------------------------------------
@@ -229,7 +233,18 @@ var decreaseScore = function() {
 };
 
 // Put your answer below -------------------------
+(function() {
+  'use strict';
 
+  const score = 0;
+
+const increaseScore = function() {
+  score++;
+};
+
+const decreaseScore = function() {
+  score--;
+};
 
 
 // -----------------------------------------------
