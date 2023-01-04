@@ -33,6 +33,10 @@ function doSomethingCool() {
 
 // Put your answer below -------------------------
 
+let doSomethingCool = function() {
+
+  doSomethingCool();
+}
 
 // -----------------------------------------------
 
@@ -52,7 +56,10 @@ function sayHi() {
 setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
-
+let sayHi = function() {
+  alert("Hello, World!");
+}
+setTimeout(sayHi, 2000);
 
 // -----------------------------------------------
 
@@ -82,7 +89,7 @@ letter = "z";
 console.log("The letter is", letter);
 
 // Put your answer below -------------------------
-
+//Option C, i think this because the x is declared befor any code and so it comes back as undefined.
 
 // -----------------------------------------------
 
