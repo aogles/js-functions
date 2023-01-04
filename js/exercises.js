@@ -27,6 +27,7 @@ function maxOfTwo(a, b){
   // ---------------------
  function maxOfThree(a, b, c){
   if ( a >= b && a >= c) { return a;}
+  //logical AND (&&) evaluates operands from left to right, returning immediately with the value of the first falsy operand it encounters; if all values are truthy, the value of the last operand is returned.
 
   else if (b >= a && b >= c) {return b;}
 
@@ -109,35 +110,35 @@ translate(string) */
   // Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
   // ---------------------
 
-  function sum(num1, num2):
-  total = num1 + num2 
-  return total
+  function sum(a,b,c) {
+    let total = 0;
+    for (const arg of (a+b+c)) {
+      total += arg;
+    }
+    return total;
+  }
 
-  function Multiply(num1, num2):
-  total = num1 * num2
-  return total
+  console.log(sum(1, 2, 3));
 
- print(sum(2, 3))
+  function multiply(a,b,c) {
+    let total = 0;
+    for (const arg of (a*b*c)) {
+      total += arg;
+    }
+    return total;
+  }
 
- /* function sum(numbers) {
-	var total = 0;
-	for (var i = 0; i < numbers.length; i++) {
-		total += numbers[i];
-	}
-	return total;
-}
+  //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters#try_it
 
-console.log(sum([1,2,3,4]));
-
-
-function multiply(numbers) {
-	var total = 1;
-	for (var i = 0; i < numbers.length; i++) {
-		total = (total * numbers[i]);
-	}
-	return total;
-console.log(multiply([1,2,3,4]));
-*/
+ //1. input: (1,2,3)
+   //2. output: sum multiplied by sum
+   //3. retuns sum then multiplies
+   //4.adds numbers together before multiplying
+   //parameter (a,b,c)
+   // 
+   //
+   //5. expected results: 6 
+   //7. results:  Error: number 6 is not iterable (cannot read property Symbol(Symbol.iterator))
 
 
   // ---------------------
@@ -145,10 +146,18 @@ console.log(multiply([1,2,3,4]));
   // ---------------------
   function reverseString(str) {
     return str.split("").reverse().join("");
-}
-reverseString("jag testar");
+    }  
+      reverseString("jag testar");
 
-
+    //https://www.freecodecamp.org/news/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb/
+    //input: the string being reversed
+    //output: the rversed string
+    //this function reverses the letters of a string
+    //reverses characters
+    //parameter: (str)
+    // expected results:"ratset gaj"
+    // results: "ratset gaj"
+    
   // ---------------------
   // Define a function findLongestWord() that takes an array of words and returns the length of the longest one.
   // ---------------------
