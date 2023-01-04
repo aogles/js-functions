@@ -157,7 +157,7 @@ translate(string) */
     //parameter: (str)
     // expected results:"ratset gaj"
     // results: "ratset gaj"
-    
+
   // ---------------------
   // Define a function findLongestWord() that takes an array of words and returns the length of the longest one.
   // ---------------------
@@ -165,7 +165,16 @@ translate(string) */
    return str.length;
 
  }
-findLongestWord("This homework was lowkey highkey hard");
+findLongestWord("This homework was lowkey  hard");
+
+//inout: any string
+//output: longest word
+// Returns the longest word in a string
+//identifies longest word
+// parameter(str)
+  //expected results: homework
+  //results: 37
+
 
   // ---------------------
   // Define a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
@@ -175,6 +184,14 @@ findLongestWord("This homework was lowkey highkey hard");
  }
 filterLongWords("I hope this is working");
 
+//inout: any string
+//output: any words greater than i
+// Returns any words greater than i
+//identifies any words greater than i
+// parameter(str)
+  //expected results: any words greater than i
+  //results: 22
+
   // ---------------------
   // Define a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
   // ---------------------
@@ -182,17 +199,23 @@ filterLongWords("I hope this is working");
     var array_lengths = {}; // object
 
     // compute frequencies of each value
-    for(var i = 0; i < string.length; i++) {
+   /* for(var i = 0; i < string.length;) {
         value = string[i];
         if(value in array_lengths) {
-            array_lengths[value]++;
+            array_lengths[value]; //The increment (++) operator increments (adds one to) its operand and returns the value before or after the increment
         } else {
             array_lengths[value] = 1;
         }
     }
-    return array_lengths;
+    return array_lengths; */
 }
-counter = charFreq("abbabcbdbabdbdbabababcbcbab");
+counter = charFreq("abbabcbdbabdbdbabababcbcbab"); 
+//input: any string
+//output:list of number of each character
+//retuns number of ech character
+//parameter: (var i = 0; i < string.length;)( string )
+// expectd result: number of each character
+result: NA
 
   ////////////////////////////////////////////////////////////////////////
   /////////////////////////DO NOT CHANGE CODE BELOW///////////////////////
