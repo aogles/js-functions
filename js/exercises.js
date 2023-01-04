@@ -50,7 +50,7 @@ function maxOfTwo(a, b){
    // Define a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
    // ---------------------
   function isVowel(char){
-    if char=='a' or char == 'e' or char == 'i' or char == 'o' or char == 'u'
+    if (char =='a' ) or char == 'e' or char == 'i' or char == 'o' or char == 'u'
   {return true;} 
    else  {return false;} 
 
@@ -60,7 +60,7 @@ function maxOfTwo(a, b){
 };
   }
 
-  isVowel(amber oglesby)
+  );isVowel(amber oglesby)
    //1. input: NA
    //2. output are vowels-true
    //3. determines the vowels present
