@@ -11,6 +11,10 @@ function maxOfTwo(a, b){
  else { return b; }
    }
 
+   function max(num1, num2) {
+
+    //console.log: can be used to check the value of variables
+
  maxOfTwo(2, 4)
  //1. input is two numbers
  //2. output is largest number
@@ -37,39 +41,31 @@ function maxOfTwo(a, b){
 
    maxOfThree(3,5,7)
 
-   //1. input is three numbers(a,b,c)
-   //2. output is largest number (7)
+   
    //3. determines the largest number
-   //4.defines largest number
    //parameter (a,b,c)
-   // ask for max of three numbers
-   //return largest number either a or b or c
    //5. expected result is 7
    //7. run results: results are 7
    // ---------------------
    // Define a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
    // ---------------------
-  function isVowel(char){
-    if (char =='a' ) or char == 'e' or char == 'i' or char == 'o' or char == 'u'
-  {return true;} 
-   else  {return false;} 
+   function isVowel(char) {
+    if(char === 'a' || char === 'e'||  char === 'i'||  char === 'o'||  char === 'u'||  
+    return true;
+
+    or return 'aeiou' .includes(char);
+}
 
 /* String.prototype.isVowel = function () {
     var vowels = ['a', 'e', 'i', 'o', 'u'];
     return vowels.indexOf(this.toLowerCase()) != -1; */
-};
-  }
 
-  );isVowel(amber oglesby)
-   //1. input: NA
-   //2. output are vowels-true
-   //3. determines the vowels present
-   //4.returns vowels as true
+   
+   // determines the vowels present
    //parameter (char)
-   // takes characters and retunr true if vowels
    //return vowels as true
-   //5. expected result vowels as true and constanants as false
-   //7. results: SyntaxError: Unexpected identifier 'char'
+   // expected result vowels as true and constanants as false
+   // results: SyntaxError: Unexpected identifier 'char'
 
   
 /* var YOURTEXTHERE = 'b';
@@ -86,59 +82,48 @@ else
   // Write a function rovarspraket() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
   // ---------------------
  
- /* Answer found from countless google searches: 
- def translate(str):
-    consonants='bcdfghjklmnpqrstvwxyz'
-    print("".join(l+'o'+l if l in consonants else l for l in str))
+  function rovarspraket(text) {
+    for (let i=0; i < text.length; i++)
+    if("bcdfghijklmnopqrstuvwxyz" .includes)
+    text[i]= text[i] + o + text[i]
+    return text.join("");
+  }
 
-string=input("Enter Any String: ")
 
-translate(string) */
-
-//1. input: any string
-   //2. output: double consonants
-   //3. doubles consonants
-   //4.doubles all present consonants
+   //doubles all present consonants
    //parameter (str)
-   // doubles the present consonants
-   //
-   //5. expected results: doubled consonnts
-   //7. results:  SyntaxError: Unexpected identifier 'translate'
+   // expected results: doubled consonnts
+   // results:  SyntaxError: Unexpected identifier 'translate'
 
 
   // ---------------------
   // Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
   // ---------------------
 
-  function sum(a,b,c) {
-    let total = 0;
-    for (const arg of (a+b+c)) {
-      total += arg;
+  function sum(arr) {
+    (let sum = 0);
+    for(let i=0; i < arr.length; i++) {
+        sum = sum + arr[i];
     }
-    return total;
-  }
 
-  console.log(sum(1, 2, 3));
+return sum;
 
-  function multiply(a,b,c) {
-    let total = 0;
-    for (const arg of (a*b*c)) {
-      total += arg;
+function multiply(arr) {
+    (let product =1 );
+    for(let i=0; i < arr.length; i++) {
+        product = product * arr[i];
     }
-    return total;
-  }
+
+return multiply;
 
   //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters#try_it
 
- //1. input: (1,2,3)
-   //2. output: sum multiplied by sum
-   //3. retuns sum then multiplies
-   //4.adds numbers together before multiplying
+ 
+   //retuns sum then multiplies
+   //adds numbers together before multiplying
    //parameter (a,b,c)
-   // 
-   //
-   //5. expected results: 6 
-   //7. results:  Error: number 6 is not iterable (cannot read property Symbol(Symbol.iterator))
+   //expected results: 6 
+  
 
 
   // ---------------------
@@ -150,10 +135,8 @@ translate(string) */
       reverseString("jag testar");
 
     //https://www.freecodecamp.org/news/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb/
-    //input: the string being reversed
-    //output: the rversed string
+    /
     //this function reverses the letters of a string
-    //reverses characters
     //parameter: (str)
     // expected results:"ratset gaj"
     // results: "ratset gaj"
@@ -161,28 +144,30 @@ translate(string) */
   // ---------------------
   // Define a function findLongestWord() that takes an array of words and returns the length of the longest one.
   // ---------------------
- function findLongestWord(str) {
-   return str.length;
+  
+  for(let i = 0; i < arr.length; i++) {
+    if(arr[i].length > length) {
+        length = arr[i].length
+    }
+}
+return length;
+}
 
- }
-findLongestWord("This homework was lowkey  hard");
-
-//inout: any string
-//output: longest word
 // Returns the longest word in a string
 //identifies longest word
 // parameter(str)
   //expected results: homework
-  //results: 37
+  //results: 
 
 
   // ---------------------
   // Define a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
   // ---------------------
- function filterLongWords(str){
-  return str.length;
- }
-filterLongWords("I hope this is working");
+  function filterLongWords(arr,i) {
+    return arr.filter(function(word) {
+        word.length > i;
+    });
+}
 
 //inout: any string
 //output: any words greater than i
@@ -195,8 +180,13 @@ filterLongWords("I hope this is working");
   // ---------------------
   // Define a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
   // ---------------------
-  function charFreq( string ) {
-    var array_lengths = {}; // object
+  function charFreq(str) {
+    const freList = {};
+    str.split("").forEach(function (char) {
+        freqList[char] = freqList[char] + 1 || 1;
+    })
+return freqList;
+}
 
     // compute frequencies of each value
    /* for(var i = 0; i < string.length;) {
