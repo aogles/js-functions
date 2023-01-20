@@ -89,7 +89,7 @@ letter = "z";
 console.log("The letter is", letter);
 
 // Put your answer below -------------------------
-//Option C, i think this because the x is declared befor any code and so it comes back as undefined.
+//Option C , the set timeout delays the value of Y
 
 // -----------------------------------------------
 
@@ -156,9 +156,10 @@ const colorNames = {
  "verde": "#00ff00",
  "negro": "#000000",
 }
+return colorNames[colorName.toLowerCase()] 
 };
 
-return colorNames[colorName.toLowerCase()] ?
+
 
 
 // -----------------------------------------------
@@ -245,7 +246,7 @@ const increaseScore = function() {
 const decreaseScore = function() {
   score--;
 };
-
+})()
 
 // -----------------------------------------------
 
@@ -296,16 +297,11 @@ var accelerate = function(amount) {
 };
 
 // Put your answer below -------------------------
-// I think the issues is the speed be set to 0, and that there is not way for the function to determine the amount or acceleration.
-function accelerate(arr) {
-
-  for(let i = 1; i < arr.speed; i++) {
-      if(arr[i].speed > speed) {
-          speed = arr[i].speed
-      }
-  }
-return speed;
-}
+//
+// if amount if undefined, undefined + a number will return Nan, the default is now set to 1.
+var accelerate = function(amount =1 ) {
+  speed += amount;
+};
 
 // -----------------------------------------------
 
